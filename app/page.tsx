@@ -12,9 +12,14 @@ export default function Home() {
       <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-black/50 backdrop-blur-lg">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="relative h-8 w-8 overflow-hidden rounded-full bg-gradient-to-br from-purple-600 to-blue-500">
-              <div className="absolute inset-0 flex items-center justify-center text-white font-bold">H</div>
-            </div>
+            {/* logo */}
+            <Image
+              src="/logo.png"
+              alt="Horizon Labs Logo"
+              width={100}
+              height={100}
+              className="h-10 w-10 rounded-full"
+            />
             <span className="text-lg font-bold">Horizon Labs</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
@@ -27,12 +32,12 @@ export default function Home() {
             <Link href="#internships" className="text-sm font-medium text-white/70 hover:text-white">
               Internships
             </Link>
-            <Link href="#projects" className="text-sm font-medium text-white/70 hover:text-white">
+            {/* <Link href="#projects" className="text-sm font-medium text-white/70 hover:text-white">
               Projects
             </Link>
             <Link href="#why-us" className="text-sm font-medium text-white/70 hover:text-white">
               Why Us
-            </Link>
+            </Link> */}
             <Link href="#contact" className="text-sm font-medium text-white/70 hover:text-white">
               Contact
             </Link>
@@ -62,13 +67,20 @@ export default function Home() {
                 design.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                {/* <Button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
                   Explore Projects
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button variant="outline" className="w-full sm:w-auto border-white/20 hover:bg-white/10">
+                </Button> */}
+                {/* <Button variant="outline" className="w-full sm:w-auto border-white/20 hover:bg-white/10">
                   Join Us
-                </Button>
+                </Button> */}
+                {/* Join us navigating to contact us */}
+                <Link href="#contact">
+                  <Button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                    Join Us
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -163,7 +175,7 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="relative py-16 md:py-24 bg-black/50">
+        {/* <section id="projects" className="relative py-16 md:py-24 bg-black/50">
           <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(67,56,202,0.1),transparent_70%)]"></div>
           <div className="container">
             <div className="mx-auto max-w-3xl text-center mb-16">
@@ -195,7 +207,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Why Intern With Us Section */}
         <section id="why-us" className="py-16 md:py-24">
           <div className="container">
             <div className="mx-auto max-w-3xl text-center mb-16">
@@ -227,7 +238,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Contact Section */}
         <section id="contact" className="relative py-16 md:py-24 bg-black/50">
