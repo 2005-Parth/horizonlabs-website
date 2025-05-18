@@ -336,11 +336,14 @@ export default function Home() {
           </div>
           <p className="text-sm text-white/50">© {new Date().getFullYear()} Horizon Labs. All rights reserved.</p>
           <div className="flex gap-4">
-            <a href="#" className="text-sm text-white/50 hover:text-white">
+            <a href="https://merchant.razorpay.com/policy/PWGqADTYCWnLwz/privacy" className="text-sm text-white/50 hover:text-white">
               Privacy
             </a>
-            <a href="#" className="text-sm text-white/50 hover:text-white">
-              Terms
+            <a href="https://merchant.razorpay.com/policy/PWGqADTYCWnLwz/contact_us" className="text-sm text-white/50 hover:text-white">
+              Contact Us
+            </a>
+            <a href="https://merchant.razorpay.com/policy/PWGqADTYCWnLwz/refund" className="text-sm text-white/50 hover:text-white">
+              Cancellation and Refund
             </a>
           </div>
         </div>
